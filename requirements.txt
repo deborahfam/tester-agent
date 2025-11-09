@@ -1,0 +1,6 @@
+streamlit>=1.30.0
+pymupdf>=1.23.7
+pdfminer.six>=20221105
+pytest>=7.4.0
+hypothesis>=6.88.0
+requests>=2.31.0

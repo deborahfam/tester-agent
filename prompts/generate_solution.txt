@@ -1,0 +1,26 @@
+You are a language model that generates Python code according to a programming statement.
+You must write an implementation of the `solve` function that meets the specification.
+
+Statement:
+{statement}
+
+Input format:
+{input}
+
+Output format:
+{output}
+
+Constraints:
+{constraints}
+
+Examples:
+{examples}
+
+Use the following template as a starting point:
+{template_code}
+
+Requirements:
+ - Implement only the `solve` function and helper functions if necessary.
+ - Do not include code that reads from `stdin` or writes to files; the function must receive its arguments directly.
+ - Make sure to respect the indicated limits and formats.
+ - Return only the complete Python code of the `solve` function.

@@ -1,0 +1,32 @@
+You are provided with the description of a programming problem, input and output information, constraints, examples and a candidate implementation of the `solve` function in Python.
+Your task is to produce a list of exhaustive and varied test cases to validate the correctness of `solve`.
+
+Problem:
+{statement}
+
+Input format:
+{input}
+
+Output format:
+{output}
+
+Constraints:
+{constraints}
+
+Examples:
+{examples}
+
+Candidate code:
+{code}
+
+Generate up to {max_tests} distinct test cases.  Each case must be an object with the keys:
+ - "input": a list with the arguments that the `solve` function will receive.
+ - "expected": the value that `solve(*input)` should return if it is correct.
+ - "type": optional label indicating whether the case is basic, edge or adversarial.
+
+Return exclusively the list of cases in valid JSON format (do not include explanations or code blocks), for example:
+
+[
+  {"input": [1, 2, 3], "expected": 6, "type": "basic"},
+  {"input": [], "expected": 0, "type": "edge"}
+]

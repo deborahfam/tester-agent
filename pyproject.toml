@@ -1,0 +1,14 @@
+[project]
+name = "tester-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "hypothesis>=6.88.0",
+    "pdfminer-six>=20221105",
+    "pymupdf>=1.23.7",
+    "pytest>=7.4.0",
+    "requests>=2.31.0",
+    "streamlit>=1.30.0",
+]

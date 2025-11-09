@@ -1,0 +1,9 @@
+You receive the complete text of a programming statement.  Your goal is to structure it into the following sections so they can be processed automatically:
+
+  - statement: problem description and objective.
+  - input: input format specification.
+  - output: output format specification.
+  - constraints: limits and restrictions (if they exist).
+  - examples: input and output examples (if they exist).
+
+Return a JSON object with these keys and the content of each section.  If any section does not exist, return it as an empty string.  Do not include additional text outside the JSON.
