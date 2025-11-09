@@ -1,29 +1,29 @@
 # Auto Tester
 
-Esta carpeta contiene una implementación de referencia de un **generador y validador automático de ejercicios de programación** basado en modelos de lenguaje y un interfaz web mediante **Streamlit**.  La estructura del proyecto sigue la propuesta descrita por el usuario e incluye módulos independientes para extraer información de un PDF, invocar un modelo de lenguaje de gran tamaño (LLM), analizar esquemas de entrada y salida, generar casos de prueba, validar distintas soluciones y empaquetar todo en un proyecto que pueda ejecutarse con PyTest. 
+This folder contains a reference implementation of an automatic **programming exercise generator and validator** based on language models and a web interface using **Streamlit**.  The project structure follows the proposal described by the user and includes independent modules to extract information from a PDF, invoke a large language model (LLM), analyze input and output schemas, generate test cases, validate different solutions and package everything in a project that can be run with PyTest. 
 
-> **Nota:** Muchos de los componentes que interactúan con servicios externos (como la API de OpenRouter) o analizan de forma profunda el enunciado de un ejercicio se encuentran implementados a modo de *plantilla*.  Se han añadido comentarios y puntos de extensión para que el desarrollador los complete según las necesidades reales.  Esta base sirve como guía y punto de partida para un desarrollo más completo.
+> Note:** Many of the components that interact with external services (such as the OpenRouter API) or deeply analyze the statement of an exercise are implemented as a *template*.  Comments and extension points have been added for the developer to complete according to actual needs.  This basis serves as a guide and starting point for a more complete development.
 
-### Estructura
+### Estructure
 
 ```
 auto_tester/
-├── app.py                # Aplicación Streamlit
+├── app.py # Streamlit application
 ├── core/
-│   ├── extractor.py      # Extracción y normalización de enunciados
-│   ├── generator.py      # Cliente de LLM y generación de soluciones/pruebas
-│   ├── validator.py      # Ejecución segura y validación diferencial
-│   ├── test_builder.py   # Construcción de archivos de pruebas pytest
-│   ├── sandbox.py        # Sandbox de ejecución segura
-│   └── utils.py          # Funciones auxiliares
+│ ├── extractor.py # Extraction and statement normalization
+│ ├── generator.py # LLM client and solution/test generation
+│ ├── validator. py # Safe execution and differential validation
+│ ├── test_builder.py # Test file construction pytest
+│ ├── sandbox.py # Safe execution sandbox
+│ └─── utils. py # Auxiliary functions
 ├── prompts/
-│   ├── generate_solution.txt  # Plantilla de prompt para soluciones
-│   ├── generate_tests.txt     # Plantilla de prompt para casos de prueba
-│   └── extract_schema.txt     # Plantilla de prompt para extracción de esquema
-├── examples/
-│   ├── template.py       # Plantilla de código de ejemplo
-│   └── sample_problem.pdf# PDF de ejemplo (puedes sustituir por un PDF real)
-└── requirements.txt      # Dependencias del proyecto
+│ ├── generate_solution.txt # Prompt template for solutions
+│ ├── generate_tests.txt # Prompt template for test cases
+│ └─── extract_schema. txt # Schema extraction prompt template
+├─── examples/
+│ ├── template.py # Sample code template
+│ └── sample_problem.pdf# sample PDF (you can substitute with real PDF)
+└── requirements.txt # Project dependencies
 ```
 
-Cada módulo incluye documentación en forma de docstrings para facilitar su comprensión y posterior ampliación.
+Each module includes documentation in the form of docstrings to facilitate understanding and further expansion.
